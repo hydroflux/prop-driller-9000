@@ -19,7 +19,7 @@ class TransformersSection extends Component {
   }
 
   handleClick = () => {
-    this.state.index < 2 ?
+    this.state.index < this.listTransformers().length - 1 ?
     this.setState({ index: this.state.index + 1 })
     : this.setState({ index: 0 })
   }
